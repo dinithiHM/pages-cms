@@ -1,0 +1,12 @@
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    path: src/posts
+    fields:
+      - name: title
+        label: Title
+        type: text
+      - name: body
+        label: Body
+        type: markdown
