@@ -1,9 +1,11 @@
-media: media
+media:
+  input: src/media
+  output: /media
 content:
   - name: posts
     label: Posts
     type: collection
-    path: '_posts'
+    path: 'src/posts'
     view:
       fields: [ title, published, date ]
     fields:
@@ -20,9 +22,9 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: config
-    label: Jekyll config
-    path: _config.yml
+  - name: site
+    label: Site settings
+    path: src/_data/site.json
     type: file
     fields:
       - name: title
@@ -40,4 +42,3 @@ content:
         label: Preview image
         type: image
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
-11ty blog
